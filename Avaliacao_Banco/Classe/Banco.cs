@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Avaliacao_Banco.Classe
 {
-    class Banco
+    public class Banco
     {
         public string NomeBanco { get; set; }
 
         public int CodigoBanco { get; set; }
 
-        public override string ToString()
+        public string InfoBanco()
         {
             StringBuilder InfoBanco = new StringBuilder();
             InfoBanco.AppendLine($"{NomeBanco}-{CodigoBanco}");
 
-            return base.ToString();
+            return InfoBanco.ToString();
         }
     }
 }

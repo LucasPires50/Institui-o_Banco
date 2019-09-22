@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Avaliacao_Banco.Classe
 {
-    class Cliente
+    public class Cliente
     {
 
         public string Nome { get; set; }
@@ -15,17 +15,17 @@ namespace Avaliacao_Banco.Classe
         
         public DateTime DataDeNascimento { get; set;}
 
-        public DateTime DataDeAberturaDaConta { get; set; }
+        //public DateTime DataDeAberturaDaConta { get; set; }
 
-        public override string ToString()
+        public string InfoCliente()
         {
             StringBuilder InfoCliente = new StringBuilder();
             InfoCliente.AppendLine($"Nome: {Nome}");
             InfoCliente.AppendLine($"CPF: {CPF}");
             InfoCliente.AppendLine($"Data de Nascimento: {DataDeNascimento}");
-            InfoCliente.AppendLine($"Data de abertura da conta: {DataDeAberturaDaConta}");
+            //InfoCliente.AppendLine($"Data de abertura da conta: {DataDeAberturaDaConta}");
 
-            return base.ToString();
+            return InfoCliente.ToString();
         }
 
 

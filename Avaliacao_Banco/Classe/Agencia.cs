@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Avaliacao_Banco.Classe
 {
-    class Agencia
+    public class Agencia
     {
         public string NumeroAgencia { get; set; }
 
-        public string Endereco { get; set; }
+        //public string Endereco { get; set; }
 
-        public string Cidade { get; set; }
+        //public string Cidade { get; set; }
 
-        public string Estado { get; set; }
+        //public string Estado { get; set; }
 
-        public override string ToString()
+        public string InfoAgencia()
         {
             StringBuilder InfoAgencia = new StringBuilder();
             InfoAgencia.AppendLine($"Número Agência: {NumeroAgencia}");
-            InfoAgencia.AppendLine($"Endereço: {Endereco}, {Cidade}-{Estado}");
+            //InfoAgencia.AppendLine($"Endereço: {Endereco}, {Cidade}-{Estado}");
 
-            return base.ToString();
+            return InfoAgencia.ToString();
         }
 
     }
