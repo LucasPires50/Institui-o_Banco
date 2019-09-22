@@ -8,5 +8,16 @@ namespace Avaliacao_Banco.Classe
 {
     class Banco
     {
+        public string NomeBanco { get; set; }
+
+        public int CodigoBanco { get; set; }
+
+        public override string ToString()
+        {
+            StringBuilder InfoBanco = new StringBuilder();
+            InfoBanco.AppendLine($"{NomeBanco}-{CodigoBanco}");
+
+            return base.ToString();
+        }
     }
 }

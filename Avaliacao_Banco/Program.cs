@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Avaliacao_Banco.Classe;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,9 @@ namespace Avaliacao_Banco
     {
         static void Main(string[] args)
         {
+            Cliente cliente = new Cliente();
 
+            
         }
     }
 }
